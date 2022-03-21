@@ -9,7 +9,7 @@ public class DBUtil {
                 ps.close();
             }
         } catch (SQLException e) {
-            System.out.println(e);
+           
         }
     }
 
@@ -19,7 +19,7 @@ public class DBUtil {
                 rs.close();
             }
         } catch (SQLException e) {
-            System.out.println(e);
+         
         }
     }
 }
