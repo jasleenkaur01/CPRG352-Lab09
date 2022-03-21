@@ -6,7 +6,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         
         <title>User Manager</title>
+        <link rel="stylesheet" href="user.css" media="all" type="text/css">
     </head>
     <body>
             <form method="post" action="user">
@@ -36,7 +38,8 @@
                         </tr>
                     </c:forEach>
                 </table>
-                <div style="margin-top: 50px; margin-left: 200px">
+                <div class="first">
+                    <h1> Add </h1>
             </form>
             <form method="post" action="user">
                 <label>Email:</label><input type="email" name="addemail" value="" >
@@ -54,11 +57,14 @@
                         <option value="${role.roleName}">${role.roleName}</option>
                     </c:forEach>
                 </select>
+                 <br>
                 <input type="hidden" name="action" value="add">
                 <input type="submit" value="Add">
             </form>
 </div>
-        <div style="margin-top: 50px; margin-left: 200px">
+                
+        <div class="second">
+            <h1> Edit </h1>
             <form method="post" action="user">
                 <label>Email:</label><input type="text" name="email" value="${email}" readonly>
                 <br>
@@ -83,6 +89,7 @@
                         <option value="${role.roleName}">${role.roleName}</option>
                     </c:forEach>
                 </select>
+                        <br>
                 <input type="submit" value="Edit">
                  <input type="hidden" name="action" value="edit">
             </form>
