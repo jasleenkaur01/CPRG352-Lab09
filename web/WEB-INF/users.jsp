@@ -14,12 +14,12 @@
             <form method="post" action="user">
             <table>
                     <tr>
-                        <th>Email</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Role</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
+                        <th>Email:</th>
+                        <th>First Name:</th>
+                        <th>Last Name:</th>
+                        <th>Role:</th>
+                        <th>Edit:</th>
+                        <th>Delete:</th>
                             
                     </tr>
                     <c:forEach items ="${users}" var="user">
