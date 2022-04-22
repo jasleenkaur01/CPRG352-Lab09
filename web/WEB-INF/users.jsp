@@ -7,7 +7,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
          
-        <title>User Manager</title>
+        <title>User Managers</title>
         <link rel="stylesheet" href="user.css" media="all" type="text/css">
     </head>
     <body>

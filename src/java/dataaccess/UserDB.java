@@ -33,7 +33,8 @@ public class UserDB {
                 User user = new User(email, active, firstName, lastName, password, role);
                 users.add(user);
             }
-        } finally {
+        } 
+        finally {
             DBUtil.closeResultSet(rs);
             DBUtil.closePreparedStatement(ps);
             cp.freeConnection(con);
@@ -64,7 +65,8 @@ public class UserDB {
                 int role = rs.getInt(6);
                 user = new User(email, active, firstName, lastName, password, role);
             }
-        } finally {
+        } 
+        finally {
             DBUtil.closeResultSet(rs);
             DBUtil.closePreparedStatement(ps);
             cp.freeConnection(con);
@@ -88,7 +90,8 @@ public class UserDB {
             ps.setString(5, user.getPassword());
             ps.setInt(6, user.getRole());
             ps.executeUpdate();
-        } finally {
+        } 
+        finally {
             DBUtil.closePreparedStatement(ps);
             cp.freeConnection(con);
         }
@@ -109,7 +112,8 @@ public class UserDB {
             ps.setInt(5, user.getRole());
             ps.setString(1, user.getPassword());
             ps.executeUpdate();
-        } finally {
+        } 
+        finally {
             DBUtil.closePreparedStatement(ps);
             cp.freeConnection(con);
         }
@@ -125,7 +129,8 @@ public class UserDB {
             ps = con.prepareStatement(sql);
             ps.setString(1, user.getEmail());
             ps.executeUpdate();
-        } finally {
+        } 
+        finally {
             DBUtil.closePreparedStatement(ps);
             cp.freeConnection(con);
         }

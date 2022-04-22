@@ -37,7 +37,8 @@ public class ConnectionPool {
     public void freeConnection(Connection c) {
         try {
             c.close();
-        } catch (SQLException e) {
+        } 
+        catch (SQLException e) {
            
         }
     }

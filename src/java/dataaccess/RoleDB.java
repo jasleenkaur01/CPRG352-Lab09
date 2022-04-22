@@ -28,7 +28,8 @@ public class RoleDB
                 Role role = new Role(roleid,rolename);
                 roles.add(role);
             }
-        } finally {
+        } 
+        finally {
             DBUtil.closeResultSet(rs);
             DBUtil.closePreparedStatement(ps);
             cp.freeConnection(con);

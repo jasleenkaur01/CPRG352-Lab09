@@ -50,7 +50,8 @@ public class UserServlet extends HttpServlet {
             String editEmail = request.getParameter("email");   
             try {
                 us.delete(editEmail);
-            } catch (Exception ex) {
+            } 
+            catch (Exception ex) {
                 Logger.getLogger(UserServlet.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
@@ -60,7 +61,8 @@ public class UserServlet extends HttpServlet {
             List roles = rs.getAll();
             request.setAttribute("users", users);
             request.setAttribute("roles", roles);
-        } catch (Exception ex) {
+        } 
+         catch (Exception ex) {
             Logger.getLogger(UserServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
         
@@ -161,7 +163,8 @@ public class UserServlet extends HttpServlet {
             List roles = rs.getAll();
             request.setAttribute("users", users);
             request.setAttribute("roles", roles);
-        } catch (Exception ex) {
+        } 
+        catch (Exception ex) {
             Logger.getLogger(UserServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
         

@@ -8,7 +8,8 @@ public class DBUtil {
             if (ps != null) {
                 ps.close();
             }
-        } catch (SQLException e) {
+        } 
+        catch (SQLException e) {
            
         }
     }
@@ -18,7 +19,8 @@ public class DBUtil {
             if (rs != null) {
                 rs.close();
             }
-        } catch (SQLException e) {
+        } 
+        catch (SQLException e) {
          
         }
     }
